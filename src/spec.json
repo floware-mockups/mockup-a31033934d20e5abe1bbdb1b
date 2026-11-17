@@ -1,0 +1,282 @@
+{
+  "title": "Gestione prenotazioni sale",
+  "description": "Prototipo per consultare il calendario settimanale, prenotare le sale e aggiornare le richieste di riunione. Tutti i nomi e i dati sono inventati.",
+  "accent": "indigo",
+  "pages": [
+    {
+      "id": "dashboard",
+      "title": "Riepilogo",
+      "description": "Panoramica delle prenotazioni e degli spazi disponibili nella settimana selezionata.",
+      "metrics": [
+        {
+          "label": "Prenotazioni settimanali",
+          "value": "24"
+        },
+        {
+          "label": "Sale disponibili oggi",
+          "value": "3"
+        },
+        {
+          "label": "Ore prenotate",
+          "value": "46"
+        },
+        {
+          "label": "Richieste da confermare",
+          "value": "2"
+        }
+      ],
+      "columns": [
+        "Sala",
+        "Giorno",
+        "Orario",
+        "Riunione",
+        "Stato"
+      ],
+      "rows": [
+        [
+          "Sala Lumo",
+          "Lunedì",
+          "09:00–10:30",
+          "Piano Nubi",
+          "Confermata"
+        ],
+        [
+          "Sala Vela",
+          "Lunedì",
+          "11:00–12:00",
+          "Gruppo Oria",
+          "Confermata"
+        ],
+        [
+          "Sala Nubi",
+          "Martedì",
+          "14:00–15:00",
+          "Progetto Elio",
+          "Da confermare"
+        ],
+        [
+          "Sala Lumo",
+          "Mercoledì",
+          "10:00–11:30",
+          "Tavolo Miral",
+          "Confermata"
+        ],
+        [
+          "Sala Vela",
+          "Giovedì",
+          "15:00–16:00",
+          "Incontro Soreli",
+          "Da confermare"
+        ]
+      ],
+      "form": []
+    },
+    {
+      "id": "calendario-settimanale",
+      "title": "Calendario settimanale",
+      "description": "Consulta le prenotazioni per giorno e fascia oraria. Usa i filtri per restringere la vista.",
+      "metrics": [
+        {
+          "label": "Settimana",
+          "value": "12–18 maggio"
+        },
+        {
+          "label": "Fasce occupate",
+          "value": "24"
+        }
+      ],
+      "columns": [
+        "Sala",
+        "Giorno",
+        "Orario",
+        "Riunione",
+        "Organizzazione",
+        "Stato"
+      ],
+      "rows": [
+        [
+          "Sala Lumo",
+          "Lunedì",
+          "09:00–10:30",
+          "Piano Nubi",
+          "Circolo Brin",
+          "Confermata"
+        ],
+        [
+          "Sala Vela",
+          "Lunedì",
+          "11:00–12:00",
+          "Gruppo Oria",
+          "Laboratorio Sile",
+          "Confermata"
+        ],
+        [
+          "Sala Nubi",
+          "Martedì",
+          "14:00–15:00",
+          "Progetto Elio",
+          "Officina Miral",
+          "Da confermare"
+        ],
+        [
+          "Sala Lumo",
+          "Mercoledì",
+          "10:00–11:30",
+          "Tavolo Miral",
+          "Circolo Brin",
+          "Confermata"
+        ],
+        [
+          "Sala Vela",
+          "Giovedì",
+          "15:00–16:00",
+          "Incontro Soreli",
+          "Laboratorio Sile",
+          "Da confermare"
+        ],
+        [
+          "Sala Nubi",
+          "Venerdì",
+          "09:30–11:00",
+          "Rassegna Varo",
+          "Officina Miral",
+          "Confermata"
+        ]
+      ],
+      "form": []
+    },
+    {
+      "id": "prenotazioni",
+      "title": "Prenotazioni",
+      "description": "Filtra le richieste, controlla i dettagli e registra una nuova prenotazione.",
+      "metrics": [
+        {
+          "label": "Prenotazioni totali",
+          "value": "24"
+        },
+        {
+          "label": "Da confermare",
+          "value": "2"
+        }
+      ],
+      "columns": [
+        "Sala",
+        "Giorno",
+        "Orario",
+        "Riunione",
+        "Organizzazione",
+        "Referente interno",
+        "Partecipanti",
+        "Stato"
+      ],
+      "rows": [
+        [
+          "Sala Lumo",
+          "Lunedì",
+          "09:00–10:30",
+          "Piano Nubi",
+          "Circolo Brin",
+          "Referente A",
+          "8",
+          "Confermata"
+        ],
+        [
+          "Sala Vela",
+          "Lunedì",
+          "11:00–12:00",
+          "Gruppo Oria",
+          "Laboratorio Sile",
+          "Referente B",
+          "5",
+          "Confermata"
+        ],
+        [
+          "Sala Nubi",
+          "Martedì",
+          "14:00–15:00",
+          "Progetto Elio",
+          "Officina Miral",
+          "Referente C",
+          "7",
+          "Da confermare"
+        ],
+        [
+          "Sala Lumo",
+          "Mercoledì",
+          "10:00–11:30",
+          "Tavolo Miral",
+          "Circolo Brin",
+          "Referente D",
+          "6",
+          "Confermata"
+        ],
+        [
+          "Sala Vela",
+          "Giovedì",
+          "15:00–16:00",
+          "Incontro Soreli",
+          "Laboratorio Sile",
+          "Referente E",
+          "4",
+          "Da confermare"
+        ]
+      ],
+      "form": [
+        "Sala",
+        "Giorno",
+        "Orario",
+        "Riunione",
+        "Organizzazione",
+        "Referente interno",
+        "Partecipanti",
+        "Stato"
+      ]
+    },
+    {
+      "id": "sale",
+      "title": "Sale riunioni",
+      "description": "Consulta gli spazi e la loro capienza per scegliere una sala adatta.",
+      "metrics": [
+        {
+          "label": "Sale registrate",
+          "value": "3"
+        },
+        {
+          "label": "Capienza complessiva",
+          "value": "42"
+        }
+      ],
+      "columns": [
+        "Sala",
+        "Capienza",
+        "Dotazioni",
+        "Accessibilità",
+        "Disponibilità"
+      ],
+      "rows": [
+        [
+          "Sala Lumo",
+          "16",
+          "Schermo, tavolo modulare",
+          "Accessibile",
+          "Attiva"
+        ],
+        [
+          "Sala Vela",
+          "12",
+          "Lavagna, schermo",
+          "Accessibile",
+          "Attiva"
+        ],
+        [
+          "Sala Nubi",
+          "14",
+          "Tavolo modulare",
+          "Accessibile",
+          "Attiva"
+        ]
+      ],
+      "form": []
+    }
+  ]
+}
